@@ -1,196 +1,106 @@
 import streamlit as st
 
-# 1. Page Configuration & Title
-st.set_page_config(
-    page_title="SciLingua: Little Science Explorers",
-    page_icon="🔬",
-    layout="centered",
-)
+# Page Configuration
+st.set_page_config(page_title="Multilingual Science Explorer", page_icon="🌱", layout="centered")
 
-# Custom Styling for Kid-Friendly Bright UI
-st.markdown(
-    """
-    <style>
-    .main {
-        background-color: #f7fbff;
-    }
-    .card {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-        border-left: 6px solid #ff4b4b;
-    }
-    .stButton>button {
-        background-color: #ff4b4b;
-        color: white;
-        font-size: 16px;
-        border-radius: 8px;
-        height: 45px;
-        width: 100%;
-    }
-    </style>
-""",
-    unsafe_allow_html=True,
-)
+st.title("🌱 Multilingual Science Explorer & Quiz")
+st.write("Explore key science terms in English and Tamil, and test your knowledge for the science expo!")
 
-# 2. Curated Science Dataset (English & Tamil)
-science_data = [
-    {
-        "term": "Magnet",
-        "tamil": "காந்தம் (Kaantham)",
-        "category": "Physics",
-        "icon": "🧲",
-        "definition": (
-            "An object that attracts metals like iron. / இரும்பை ஈர்க்கும் ஒரு"
-            " பொருள்."
-        ),
-    },
-    {
-        "term": "Photosynthesis",
+# ==========================================
+# 📖 DICTIONARY DATABASE (ADD MORE WORDS HERE!)
+# ==========================================
+SCIENCE_TERMS = {
+    "Photosynthesis": {
         "tamil": "ஒளிச்சேர்க்கை (Olicherkai)",
-        "category": "Biology",
-        "icon": "🌿",
-        "definition": (
-            "How plants make food using sunlight. / தாவரங்கள் சூரிய ஒளியைப்"
-            " பயன்படுத்தி உணவு தயாரிக்கும் முறை."
-        ),
+        "definition": "The process by which plants use sunlight to synthesize foods from carbon dioxide and water.",
+        "category": "Biology"
     },
-    {
-        "term": "Solar System",
-        "tamil": "சூரிய குடும்பம் (Sooriya Kudumbam)",
-        "category": "Space",
-        "icon": "☀️",
-        "definition": (
-            "The Sun and all the planets revolving around it. / சூரியனும் அதைச்"
-            " சுற்றும் கோள்களும்."
-        ),
+    "Atom": {
+        "tamil": "அணு (Anu)",
+        "definition": "The basic building block of all matter in the universe.",
+        "category": "Chemistry"
     },
-    {
-        "term": "Electricity",
-        "tamil": "மின்சாரம் (Minsaram)",
-        "category": "Physics",
-        "icon": "⚡",
-        "definition": (
-            "Flow of electric power that runs appliances. / மின்சாதனங்களை"
-            " இயக்கும் ஆற்றல்."
-        ),
+    "Gravity": {
+        "tamil": "ஈர்ப்புவிசை (Irppu Visai)",
+        "definition": "The natural force that attracts any two objects with mass toward each other.",
+        "category": "Physics"
     },
-    {
-        "term": "Ecosystem",
-        "tamil": "சூழல் மண்டலம் (Soozhal Mandalam)",
-        "category": "Biology",
-        "icon": "🌍",
-        "definition": (
-            "A community of living things interacting with their environment."
-            " / உயிரினங்களும் அவற்றின் சுற்றுப்புறமும்."
-        ),
+    "Cell": {
+        "tamil": "செல் / உயிரணு (Cell)",
+        "definition": "The smallest structural and functional unit of all living organisms.",
+        "category": "Biology"
     },
-]
-
-# Quiz Questions Database
-quiz_questions = [
-    {
-        "question": (
-            "What is the Tamil word for 'Magnet'? \n 'காந்தம்' எதைக் குறிக்கிறது?"
-        ),
-        "options": [
-            "Electricity (மின்சாரம்)",
-            "Magnet (காந்தம்)",
-            "Force (விசை)",
-            "Heat (வெப்பம்)",
-        ],
-        "answer": "Magnet (காந்தம்)",
+    "Mitochondria": {
+        "tamil": "மைட்டோகாண்ட்ரியா (Mitochondria)",
+        "definition": "Known as the powerhouse of the cell, generating chemical energy needed for biochemical reactions.",
+        "category": "Biology"
     },
-    {
-        "question": (
-            "How do plants make food using sunlight? \n தாவரங்கள் உணவு"
-            " தயாரிக்க உதவும் முறை எது?"
-        ),
-        "options": [
-            "Photosynthesis (ஒளிச்சேர்க்கை)",
-            "Evaporation (நீராவிப்போக்கு)",
-            "Respiration (சுவாசம்)",
-            "Condensation (நீர்த்துளிதல்)",
-        ],
-        "answer": "Photosynthesis (ஒளிச்சேர்க்கை)",
+    "Ecosystem": {
+        "tamil": "சூழலியல் (Sujaliyal)",
+        "definition": "A community of living organisms interacting with each other and their physical environment.",
+        "category": "Environmental Science"
     },
-]
+    "Velocity": {
+        "tamil": "திசைவேகம் (Disai Vegam)",
+        "definition": "The speed of an object in a specific direction.",
+        "category": "Physics"
+    },
+    "Molecule": {
+        "tamil": "மூலக்கூறு (Moolakooru)",
+        "definition": "A group of two or more atoms held together by chemical bonds.",
+        "category": "Chemistry"
+    },
+    "Respiration": {
+        "tamil": "சுவாசம் (Svasam)",
+        "definition": "The action of breathing; the process in living organisms involving the production of energy.",
+        "category": "Biology"
+    },
+    "Refraction": {
+        "tamil": "ஒளி விலகல் (Oli Vilagal)",
+        "definition": "The bending of a wave as it passes from one medium to another.",
+        "category": "Physics"
+    }
+}
 
-# App Header
-st.title("🔬 SciLingua: Little Science Explorers")
-st.write(
-    "Welcome! Explore cool science words in **English & Tamil**, then test your"
-    " skills with our fun quiz game!"
-)
+# Sidebar Navigation
+menu = st.sidebar.selectbox("Choose a Section", ["Dictionary Explorer", "Interactive Quiz"])
 
-# Sidebar Menu for Navigation
-menu = st.sidebar.radio("Choose Mode:", ["📘 Learn Words", "🎮 Quiz Challenge"])
+# ==========================================
+# SECTION 1: DICTIONARY EXPLORER
+# ==========================================
+if menu == "Dictionary Explorer":
+    st.header("📖 Bilingual Science Dictionary")
+    st.write("Search or select a science term to view its Tamil translation and definition:")
+    
+    # Search / Selectbox dropdown of all terms
+    search_term = st.selectbox("Choose a term:", list(SCIENCE_TERMS.keys()))
+    
+    if search_term:
+        details = SCIENCE_TERMS[search_term]
+        st.info(f"**English Term:** {search_term}")
+        st.success(f"**Tamil Translation:** {details['tamil']}")
+        st.write(f"**Category:** {details['category']}")
+        st.write(f"**Definition:** {details['definition']}")
 
-# --- MODE 1: LEARN WORDS (Interactive Dictionary) ---
-if menu == "📘 Learn Words":
-    st.header("Interactive Science Dictionary")
-    st.write(
-        "Type a science word or browse through the cards below to learn their"
-        " meanings in Tamil!"
-    )
+# ==========================================
+# SECTION 2: INTERACTIVE QUIZ
+# ==========================================
+elif menu == "Interactive Quiz":
+    st.header("🧠 Science Knowledge Quiz")
+    st.write("Test what you've learned!")
+    
+    score = 0
+    
+    # Question 1
+    q1 = st.radio("1. What is known as the powerhouse of the cell?", ("Nucleus", "Mitochondria", "Ribosome", "Atom"))
+    if q1 == "Mitochondria":
+        st.success("Correct! Great job!")
+    elif q1:
+        st.error("Incorrect. Try another option!")
 
-    # Real-time search filter bar
-    search_query = st.text_input(
-        "🔍 Search keyword (e.g., Magnet, Photosynthesis, Solar):"
-    )
-
-    # Filter data list dynamically based on search
-    filtered_data = [
-        item
-        for item in science_data
-        if search_query.lower() in item["term"].lower()
-        or search_query.lower() in item["tamil"].lower()
-    ]
-
-    if not filtered_data:
-        st.warning(
-            "No science words found matching your search. Try another word!"
-        )
-
-    # Render dynamic UI cards for each science term
-    for item in filtered_data:
-        st.markdown(
-            f"""
-        <div class="card">
-            <h3>{item['icon']} {item['term']}</h3>
-            <p><b>Tamil Translation:</b> {item['tamil']}</p>
-            <p><b>Category:</b> {item['category']}</p>
-            <p><b>Definition:</b> {item['definition']}</p>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
-
-# --- MODE 2: QUIZ CHALLENGE ---
-elif menu == "🎮 Quiz Challenge":
-    st.header("Science Quiz Arena 🏆")
-    st.write("Answer the questions correctly to test your science superpower!")
-
-    # Interactive Quiz Loop with Instant Feedback
-    for idx, q in enumerate(quiz_questions):
-        st.subheader(f"Question {idx + 1}")
-        user_choice = st.radio(q["question"], q["options"], key=f"q_{idx}")
-
-        if st.button(f"Submit Answer {idx + 1}", key=f"btn_{idx}"):
-            if user_choice == q["answer"]:
-                st.success(
-                    "🎉 Correct! Excellent job, you're a true science explorer!"
-                )
-            else:
-                st.error(
-                    f"❌ Not quite right! The correct answer is: {q['answer']}"
-                )
-
-        st.markdown("---")
-
-    st.info(
-        "💡 **Expo Tip:** Have visiting school students play this challenge"
-        " live at your booth and see who gets both answers correct!"
-    )
+    # Question 2
+    q2 = st.radio("2. What is 'Photosynthesis' in Tamil?", ("ஈர்ப்புவிசை", "ஒளிச்சேர்க்கை", "சுவாசம்", "மூலக்கூறு"))
+    if q2 == "ஒளிச்சேர்க்கை":
+        st.success("Correct! Well done!")
+    elif q2:
+        st.error("Incorrect. Try another option!")
