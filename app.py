@@ -1,106 +1,95 @@
 import streamlit as st
+import json
 
-# Page Configuration
-st.set_page_config(page_title="Multilingual Science Explorer", page_icon="🌱", layout="centered")
+# Page Config
+st.set_page_config(page_title="Multilingual Science Explorer", page_icon="🌱", layout="wide")
+
+# Function to load dictionary from JSON file
+@st.cache_data
+def load_dictionary():
+    try:
+        with open("dictionary.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+terms_data = load_dictionary()
 
 st.title("🌱 Multilingual Science Explorer & Quiz")
-st.write("Explore key science terms in English and Tamil, and test your knowledge for the science expo!")
-
-# ==========================================
-# 📖 DICTIONARY DATABASE (ADD MORE WORDS HERE!)
-# ==========================================
-SCIENCE_TERMS = {
-    "Photosynthesis": {
-        "tamil": "ஒளிச்சேர்க்கை (Olicherkai)",
-        "definition": "The process by which plants use sunlight to synthesize foods from carbon dioxide and water.",
-        "category": "Biology"
-    },
-    "Atom": {
-        "tamil": "அணு (Anu)",
-        "definition": "The basic building block of all matter in the universe.",
-        "category": "Chemistry"
-    },
-    "Gravity": {
-        "tamil": "ஈர்ப்புவிசை (Irppu Visai)",
-        "definition": "The natural force that attracts any two objects with mass toward each other.",
-        "category": "Physics"
-    },
-    "Cell": {
-        "tamil": "செல் / உயிரணு (Cell)",
-        "definition": "The smallest structural and functional unit of all living organisms.",
-        "category": "Biology"
-    },
-    "Mitochondria": {
-        "tamil": "மைட்டோகாண்ட்ரியா (Mitochondria)",
-        "definition": "Known as the powerhouse of the cell, generating chemical energy needed for biochemical reactions.",
-        "category": "Biology"
-    },
-    "Ecosystem": {
-        "tamil": "சூழலியல் (Sujaliyal)",
-        "definition": "A community of living organisms interacting with each other and their physical environment.",
-        "category": "Environmental Science"
-    },
-    "Velocity": {
-        "tamil": "திசைவேகம் (Disai Vegam)",
-        "definition": "The speed of an object in a specific direction.",
-        "category": "Physics"
-    },
-    "Molecule": {
-        "tamil": "மூலக்கூறு (Moolakooru)",
-        "definition": "A group of two or more atoms held together by chemical bonds.",
-        "category": "Chemistry"
-    },
-    "Respiration": {
-        "tamil": "சுவாசம் (Svasam)",
-        "definition": "The action of breathing; the process in living organisms involving the production of energy.",
-        "category": "Biology"
-    },
-    "Refraction": {
-        "tamil": "ஒளி விலகல் (Oli Vilagal)",
-        "definition": "The bending of a wave as it passes from one medium to another.",
-        "category": "Physics"
-    }
-}
+st.write(f"Explore **{len(terms_data)}** essential scientific terms translated into Tamil with detailed definitions.")
 
 # Sidebar Navigation
-menu = st.sidebar.selectbox("Choose a Section", ["Dictionary Explorer", "Interactive Quiz"])
+menu = st.sidebar.radio("Navigation", ["📖 Dictionary Explorer", "🧠 Interactive Quiz"])
 
 # ==========================================
 # SECTION 1: DICTIONARY EXPLORER
 # ==========================================
-if menu == "Dictionary Explorer":
-    st.header("📖 Bilingual Science Dictionary")
-    st.write("Search or select a science term to view its Tamil translation and definition:")
+if menu == "📖 Dictionary Explorer":
+    st.header("📖 Science Terms Dictionary")
     
-    # Search / Selectbox dropdown of all terms
-    search_term = st.selectbox("Choose a term:", list(SCIENCE_TERMS.keys()))
-    
-    if search_term:
-        details = SCIENCE_TERMS[search_term]
-        st.info(f"**English Term:** {search_term}")
-        st.success(f"**Tamil Translation:** {details['tamil']}")
-        st.write(f"**Category:** {details['category']}")
-        st.write(f"**Definition:** {details['definition']}")
+    if not terms_data:
+        st.error("dictionary.json file not found. Please make sure dictionary.json is committed to your repository.")
+    else:
+        # Get list of categories
+        categories = ["All"] + sorted(list(set(item["category"] for item in terms_data)))
+        
+        col1, col2 = st.columns([1, 2])
+        
+        with col1:
+            selected_category = st.selectbox("Filter by Category:", categories)
+        
+        # Filter terms by category
+        if selected_category != "All":
+            filtered_terms = [t for t in terms_data if t["category"] == selected_category]
+        else:
+            filtered_terms = terms_data
+            
+        term_names = [t["term"] for t in filtered_terms]
+        
+        with col2:
+            search_selection = st.selectbox("Type or select a term to inspect:", term_names)
+            
+        # Display selected term
+        selected_data = next((item for item in filtered_terms if item["term"] == search_selection), None)
+        
+        if selected_data:
+            st.divider()
+            st.subheader(f"🔍 {selected_data['term']}")
+            
+            c1, c2 = st.columns(2)
+            with c1:
+                st.info(f"**Tamil Translation:**\n### {selected_data['tamil']}")
+            with c2:
+                st.warning(f"**Category:** {selected_data['category']}")
+                
+            st.write(f"**Scientific Definition:** {selected_data['definition']}")
 
 # ==========================================
 # SECTION 2: INTERACTIVE QUIZ
 # ==========================================
-elif menu == "Interactive Quiz":
-    st.header("🧠 Science Knowledge Quiz")
-    st.write("Test what you've learned!")
+elif menu == "🧠 Interactive Quiz":
+    st.header("🧠 Science Expo Knowledge Quiz")
+    st.write("Test your knowledge of scientific terms and their Tamil translations!")
     
     score = 0
     
-    # Question 1
-    q1 = st.radio("1. What is known as the powerhouse of the cell?", ("Nucleus", "Mitochondria", "Ribosome", "Atom"))
-    if q1 == "Mitochondria":
-        st.success("Correct! Great job!")
-    elif q1:
-        st.error("Incorrect. Try another option!")
+    q1 = st.radio("1. What is the Tamil term for 'Photosynthesis'?", 
+                  ("ஒளிச்சேர்க்கை", "ஈர்ப்புவிசை", "சுவாசம்", "முடுக்கம்"))
+    if q1 == "ஒளிச்சேர்க்கை":
+        st.success("Correct!")
+        score += 1
 
-    # Question 2
-    q2 = st.radio("2. What is 'Photosynthesis' in Tamil?", ("ஈர்ப்புவிசை", "ஒளிச்சேர்க்கை", "சுவாசம்", "மூலக்கூறு"))
-    if q2 == "ஒளிச்சேர்க்கை":
-        st.success("Correct! Well done!")
-    elif q2:
-        st.error("Incorrect. Try another option!")
+    q2 = st.radio("2. Which term describes the smallest structural unit of living organisms?", 
+                  ("Atom", "Cell", "Molecule", "Tissue"))
+    if q2 == "Cell":
+        st.success("Correct!")
+        score += 1
+
+    q3 = st.radio("3. 'முடுக்கம்' (Mudukkam) corresponds to which English science term?", 
+                  ("Velocity", "Force", "Acceleration", "Density"))
+    if q3 == "Acceleration":
+        st.success("Correct!")
+        score += 1
+        
+    st.divider()
+    st.metric(label="Your Total Score", value=f"{score} / 3")
