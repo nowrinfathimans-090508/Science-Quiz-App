@@ -28,7 +28,7 @@ st.sidebar.divider()
 st.sidebar.subheader("📱 Scan to Open on Phone")
 
 # 💡 PASTE your copied QR code image link inside the quotes below:
-qr_image_url = "PASTE_YOUR_COPIED_IMAGE_LINK_HERE"
+qr_image_url = "https://i.postimg.cc/rm4m42Y1/qr-code.png"
 
 if qr_image_url != "PASTE_YOUR_COPIED_IMAGE_LINK_HERE":
     st.sidebar.image(qr_image_url, width=180, caption="Scan for Mobile Expo View")
