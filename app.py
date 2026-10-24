@@ -69,27 +69,112 @@ if menu == "📖 Dictionary Explorer":
 # ==========================================
 elif menu == "🧠 Interactive Quiz":
     st.header("🧠 Science Expo Knowledge Quiz")
-    st.write("Test your knowledge of scientific terms and their Tamil translations!")
+    st.write("Answer the questions below to test your understanding of key scientific concepts!")
     
     score = 0
+    total_questions = 10
     
-    q1 = st.radio("1. What is the Tamil term for 'Photosynthesis'?", 
-                  ("ஒளிச்சேர்க்கை", "ஈர்ப்புவிசை", "சுவாசம்", "முடுக்கம்"))
-    if q1 == "ஒளிச்சேர்க்கை":
-        st.success("Correct!")
-        score += 1
-
-    q2 = st.radio("2. Which term describes the smallest structural unit of living organisms?", 
-                  ("Atom", "Cell", "Molecule", "Tissue"))
-    if q2 == "Cell":
-        st.success("Correct!")
-        score += 1
-
-    q3 = st.radio("3. 'முடுக்கம்' (Mudukkam) corresponds to which English science term?", 
-                  ("Velocity", "Force", "Acceleration", "Density"))
-    if q3 == "Acceleration":
-        st.success("Correct!")
-        score += 1
-        
     st.divider()
-    st.metric(label="Your Total Score", value=f"{score} / 3")
+
+    # Question 1
+    st.subheader("1. Biology / உயிரினவியல்")
+    q1 = st.radio("What is the Tamil term for 'Photosynthesis'?", 
+                  ("Select an option", "ஈர்ப்புவிசை", "ஒளிச்சேர்க்கை", "சுவாசம்", "முடுக்கம்"))
+    if q1 == "ஒளிச்சேர்க்கை":
+        score += 1
+
+    st.divider()
+
+    # Question 2
+    st.subheader("2. Biology / உயிரினவியல்")
+    q2 = st.radio("Which cell organelle is known as the powerhouse of the cell?", 
+                  ("Select an option", "Nucleus", "Ribosome", "Mitochondria", "Cell Wall"))
+    if q2 == "Mitochondria":
+        score += 1
+
+    st.divider()
+
+    # Question 3
+    st.subheader("3. Physics / இயற்பியல்")
+    q3 = st.radio("'முடுக்கம்' (Mudukkam) corresponds to which English science term?", 
+                  ("Select an option", "Velocity", "Force", "Acceleration", "Density"))
+    if q3 == "Acceleration":
+        score += 1
+
+    st.divider()
+
+    # Question 4
+    st.subheader("4. Chemistry / வேதியியல்")
+    q4 = st.radio("What is the basic building block of all matter in the universe?", 
+                  ("Select an option", "Molecule", "Atom", "Compound", "Cell"))
+    if q4 == "Atom":
+        score += 1
+
+    st.divider()
+
+    # Question 5
+    st.subheader("5. Environmental Science / சூழலியல்")
+    q5 = st.radio("What is the Tamil translation for 'Biodiversity'?", 
+                  ("Select an option", "பல்லுயிர்ப் பெருக்கம்", "வளிமண்டலம்", "சூழலியல்", "மட்கும் திறன்"))
+    if q5 == "பல்லுயிர்ப் பெருக்கம்":
+        score += 1
+
+    st.divider()
+
+    # Question 6
+    st.subheader("6. Physics / இயற்பியல்")
+    q6 = st.radio("The bending of light as it passes from one medium to another is called:", 
+                  ("Select an option", "Reflection", "Refraction", "Conduction", "Absorption"))
+    if q6 == "Refraction":
+        score += 1
+
+    st.divider()
+
+    # Question 7
+    st.subheader("7. Biology / உயிரினவியல்")
+    q7 = st.radio("Which double-helix molecule carries genetic instructions in living organisms?", 
+                  ("Select an option", "Glucose", "Enzyme", "DNA", "Hormone"))
+    if q7 == "DNA":
+        score += 1
+
+    st.divider()
+
+    # Question 8
+    st.subheader("8. Chemistry / வேதியியல்")
+    q8 = st.radio("Substances with a pH value below 7 are classified as:", 
+                  ("Select an option", "Acids", "Bases", "Alloys", "Polymers"))
+    if q8 == "Acids":
+        score += 1
+
+    st.divider()
+
+    # Question 9
+    st.subheader("9. Astronomy / வானியல்")
+    q9 = st.radio("What is 'கருந்துளை' (Karundhulai) in English astronomy terms?", 
+                  ("Select an option", "Asteroid", "Galaxy", "Black Hole", "Nebula"))
+    if q9 == "Black Hole":
+        score += 1
+
+    st.divider()
+
+    # Question 10
+    st.subheader("10. Physics / இயற்பியல்")
+    q10 = st.radio("What force opposes the relative motion between two sliding surfaces?", 
+                   ("Select an option", "Gravity", "Friction", "Inertia", "Buoyancy"))
+    if q10 == "Friction":
+        score += 1
+
+    st.divider()
+
+    # Score Calculation & Feedback
+    if st.button("🎯 Submit Answers & See Final Score"):
+        st.balloons()
+        st.metric(label="Your Final Quiz Score", value=f"{score} / {total_questions}")
+        
+        percentage = (score / total_questions) * 100
+        if percentage >= 80:
+            st.success(f"🌟 Outstanding job! You scored {percentage:.0f}%. You are a Science Master!")
+        elif percentage >= 50:
+            st.info(f"👍 Good effort! You scored {percentage:.0f}%. Explore the dictionary to improve your score!")
+        else:
+            st.warning(f"📚 You scored {percentage:.0f}%. Try checking the Dictionary section and try again!")
