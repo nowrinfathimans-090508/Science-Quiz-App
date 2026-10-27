@@ -22,20 +22,6 @@ st.write(f"Explore **{len(terms_data)}** essential scientific terms translated i
 # Sidebar Navigation
 menu = st.sidebar.radio("Navigation", ["📖 Dictionary Explorer", "🧠 Interactive Quiz"])
 
-# ==========================================
-# 📱 QR CODE DISPLAY IN SIDEBAR
-# ==========================================
-st.sidebar.divider()
-st.sidebar.subheader("📱 Scan to Open on Phone")
-
-# Your Postimages direct link
-qr_image_url = "PASTE_YOUR_POSTIMAGES_LINK_HERE"
-
-if qr_image_url != "PASTE_YOUR_POSTIMAGES_LINK_HERE":
-    st.sidebar.image(qr_image_url, width=180, caption="Scan for Mobile Expo View")
-else:
-    st.sidebar.info("QR Code active.")
-
 
 # ==========================================
 # SECTION 1: DICTIONARY EXPLORER
