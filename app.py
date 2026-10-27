@@ -2,7 +2,7 @@ import streamlit as st
 import json
 
 # Page Config
-st.set_page_config(page_title="Multilingual Science Explorer", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="🌱 Science Explorer & Quiz", page_icon="🌱", layout="wide")
 
 # Function to load dictionary from JSON file
 @st.cache_data
