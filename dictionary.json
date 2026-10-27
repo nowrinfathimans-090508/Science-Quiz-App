@@ -187,5 +187,839 @@
   {"term": "Work", "tamil": "வேலை (Velai)", "category": "Physics", "definition": "Energy transferred when a force moves an object over a distance."},
   {"term": "X-Ray", "tamil": "எக்ஸ்-கதிர் (X-Kadhir)", "category": "Physics", "definition": "High-energy electromagnetic radiation used in medical imaging."},
   {"term": "Xylem", "tamil": "சைலம் / நீர்க்கடத்து திசு (Neer Kadathu Thisu)", "category": "Biology", "definition": "Plant vascular tissue that transports water and dissolved minerals upwards."},
-  {"term": "Zygote", "tamil": "கருமுட்டை / கருக்கட்டுரு (Karumuttai)", "category": "Biology", "definition": "Eukaryotic cell formed by fertilization event between two gametes."}
+  {"term": "Zygote", "tamil": "கருமுட்டை / கருக்கட்டுரு (Karumuttai)", "category": "Biology", "definition": "Eukaryotic cell formed by fertilization event between two gametes."},
+{
+    "term": "Abiotic Factor",
+    "tamil": "உயிரற்ற காரணி (Uyirattra Kaarani)",
+    "category": "Environmental Science",
+    "definition": "Non-living chemical and physical parts of the environment that affect living organisms."
+  },
+  {
+    "term": "Active Transport",
+    "tamil": "ஆற்றல்மிகு கடத்தல் (Aatralmigu Kadathal)",
+    "category": "Biology",
+    "definition": "The movement of ions or molecules across a cellular membrane into a region of higher concentration, requiring energy."
+  },
+  {
+    "term": "Alveoli",
+    "tamil": "நுரையீரல் சிற்றறைகள் (Nuraiyeeral Sitraraigal)",
+    "category": "Biology",
+    "definition": "Tiny air sacs in the lungs where the exchange of oxygen and carbon dioxide takes place."
+  },
+  {
+    "term": "Ammeter",
+    "tamil": "அம்மீட்டர் (Ammeter)",
+    "category": "Physics",
+    "definition": "An instrument used to measure electric current in a circuit."
+  },
+  {
+    "term": "Anion",
+    "tamil": "எதிர் அயனி (Edhir Ayani)",
+    "category": "Chemistry",
+    "definition": "A negatively charged ion that moves toward the anode in electrolysis."
+  },
+  {
+    "term": "Aqueous Solution",
+    "tamil": "நீர்க்கரைசல் (Neerkarisal)",
+    "category": "Chemistry",
+    "definition": "A solution in which the solvent is water."
+  },
+  {
+    "term": "Archimedes' Principle",
+    "tamil": "ஆர்க்கிமிடிஸ் தத்துவம் (Archimedes Thathuvam)",
+    "category": "Physics",
+    "definition": "States that the upward buoyant force exerted on a body immersed in a fluid is equal to the weight of the fluid displaced."
+  },
+  {
+    "term": "Asexual Reproduction",
+    "tamil": "பாலிலா இனப்பெருக்கம் (Paalila Inapperukkam)",
+    "category": "Biology",
+    "definition": "Reproduction involving a single parent, producing offspring that are genetically identical."
+  },
+  {
+    "term": "Avoirdupois Weight",
+    "tamil": "அவொயர்டிபோயிஸ் எடை முறை (Avoirdupois Edai)",
+    "category": "Physics",
+    "definition": "A system of weights based on a pound of 16 ounces."
+  },
+  {
+    "term": "Boyle's Law",
+    "tamil": "பாயில் விதி (Boyle Vithi)",
+    "category": "Physics/Chemistry",
+    "definition": "States that the pressure of a given mass of gas is inversely proportional to its volume at constant temperature."
+  },
+  {
+    "term": "Capillaries",
+    "tamil": "நுண்ணுயிர்க் குழாய்கள் (Nunnuyir Kuzhaigal)",
+    "category": "Biology",
+    "definition": "Extremely small blood vessels that connect arteries to veins."
+  },
+  {
+    "term": "Cation",
+    "tamil": "நேர் அயனி (Ner Ayani)",
+    "category": "Chemistry",
+    "definition": "A positively charged ion that moves toward the cathode in electrolysis."
+  },
+  {
+    "term": "Chloroplast",
+    "tamil": "பசுங்கணிகம் (Pasungkanigam)",
+    "category": "Biology",
+    "definition": "A plant cell organelle that carries out photosynthesis using chlorophyll."
+  },
+  {
+    "term": "Collision Theory",
+    "tamil": "மோதல் கோட்பாடு (Mothal Kotpadu)",
+    "category": "Chemistry",
+    "definition": "Explains how chemical reactions occur and why reaction rates differ for different reactions based on molecular collisions."
+  },
+  {
+    "term": "Diffraction",
+    "tamil": "ஒளி விளிம்பு விளைவு (Oli Vilimbu Vilaivu)",
+    "category": "Physics",
+    "definition": "The bending of waves around the corners of an obstacle or through an aperture."
+  },
+  {
+    "term": "Dominant Trait",
+    "tamil": "ஓங்கு பண்பு (Ongu Panbu)",
+    "category": "Biology",
+    "definition": "An inherited trait that appears in an offspring if it is contributed from a parent through a dominant allele."
+  },
+  {
+    "term": "Doppler Effect",
+    "tamil": "டாப்ளர் விளைவு (Doppler Vilaivu)",
+    "category": "Physics",
+    "definition": "The change in frequency of a wave in relation to an observer who is moving relative to the wave source."
+  },
+  {
+    "term": "Endothermic Reaction",
+    "tamil": "வெப்பக்கொள் வினை (Veppamkol Vinai)",
+    "category": "Chemistry",
+    "definition": "A chemical reaction accompanied by the absorption of heat."
+  },
+  {
+    "term": "Endoplasmic Reticulum",
+    "tamil": "எண்டோபிளாச வலைப்பின்னல் (Endoplasmic Valaippinnal)",
+    "category": "Biology",
+    "definition": "A network of membranous tubules within the cytoplasm of a eukaryotic cell involved in protein and lipid synthesis."
+  },
+  {
+    "term": "Faraday's Law",
+    "tamil": "ஃபாரடே விதி (Faraday Vithi)",
+    "category": "Physics",
+    "definition": "States that a change in magnetic field induces an electromotive force (EMF) in a conductor."
+  },
+  {
+    "term": "Galvanometer",
+    "tamil": "கால்வனாமீட்டர் (Galvanometer)",
+    "category": "Physics",
+    "definition": "An instrument for detecting and measuring small electric currents."
+  },
+  {
+    "term": "Half-Life",
+    "tamil": "அரை ஆயுட்காலம் (Arai Aayutkalam)",
+    "category": "Physics/Chemistry",
+    "definition": "The time required for half the atoms of a radioactive substance to decay."
+  },
+  {
+    "term": "Hooke's Law",
+    "tamil": "ஹூக் விதி (Hooke Vithi)",
+    "category": "Physics",
+    "definition": "States that the force needed to extend or compress a spring by some distance scales linearly with respect to that distance."
+  },
+  {
+    "term": "Hydrolysis",
+    "tamil": "நீர்ப்பகுப்பு (Neerppaguppu)",
+    "category": "Chemistry",
+    "definition": "A chemical reaction in which a molecule of water breaks one or more chemical bonds."
+  },
+  {
+    "term": "Insulin",
+    "tamil": "இன்சுலின் (Insulin)",
+    "category": "Biology",
+    "definition": "A hormone produced in the pancreas that regulates the amount of glucose in the blood."
+  },
+  {
+    "term": "Kinematic Viscosity",
+    "tamil": "இயக்கப் பாகுநிலை (Iyakka Pakunilai)",
+    "category": "Physics",
+    "definition": "The ratio of dynamic viscosity to fluid density."
+  },
+  {
+    "term": "Le Chatelier's Principle",
+    "tamil": "லீ சாட்லியர் தத்துவம் (Le Chatelier Thathuvam)",
+    "category": "Chemistry",
+    "definition": "States that if a dynamic equilibrium is disturbed, the position of equilibrium shifts to counteract the change."
+  },
+  {
+    "term": "Lymphatic System",
+    "tamil": "நினைநீர் மண்டலம் (Ninaineer Mandalam)",
+    "category": "Biology",
+    "definition": "A network of tissues and organs that help rid the body of toxins and waste."
+  },
+  {
+    "term": "Neutralization",
+    "tamil": "நடுநிலையாக்கல் (Nadunilaiyaakkal)",
+    "category": "Chemistry",
+    "definition": "A chemical reaction in which an acid and a base react quantitatively with each other to form salt and water."
+  },
+  {
+    "term": "Phloem",
+    "tamil": "புளோயம் / உணவுக் கடத்து திசு (Phloem)",
+    "category": "Biology",
+    "definition": "Plant vascular tissue that conducts synthesized food materials from leaves to other plant parts."
+  },
+  {
+    "term": "Recessive Trait",
+    "tamil": "ஒடுங்கு பண்பு (Odungu Panbu)",
+    "category": "Biology",
+    "definition": "A trait that is expressed only when two copies of the allele are present."
+  },
+  {
+    "term": "Ribosome",
+    "tamil": "ரைபோசோம் (Ribosome)",
+    "category": "Biology",
+    "definition": "A minute particle consisting of RNA and associated proteins found in large numbers in the cytoplasm of living cells."
+  },
+  {
+    "term": "Superconductor",
+    "tamil": "மீக்கடத்தி (Meekkadathi)",
+    "category": "Physics",
+    "definition": "A substance that conducts electricity without resistance when cooled below a critical temperature."
+  },
+  {
+    "term": "Transpiration",
+    "tamil": "நீராவிப்போக்கு (Neeravippokku)",
+    "category": "Biology",
+    "definition": "The process of water movement through a plant and its evaporation from aerial parts such as leaves."
+  },
+  {
+    "term": "Voltmeter",
+    "tamil": "வோல்ட்மீட்டர் (Voltmeter)",
+    "category": "Physics",
+    "definition": "An instrument used for measuring electrical potential difference between two points in a circuit."
+  }
+{
+    "term": "Activation Energy",
+    "tamil": "கிளர்வு ஆற்றல் (Klarvu Aatral)",
+    "category": "Chemistry",
+    "definition": "The minimum amount of energy required to start a chemical reaction."
+  },
+  {
+    "term": "Allele",
+    "tamil": "அல்லீல் / மாற்றுரு (Maatruru)",
+    "category": "Biology",
+    "definition": "One of two or more alternative forms of a gene that arise by mutation and are found at the same place on a chromosome."
+  },
+  {
+    "term": "Alpha Particle",
+    "tamil": "ஆல்பா துகள் (Alpha Thugal)",
+    "category": "Physics",
+    "definition": "A helium nucleus emitted by some radioactive substances, consisting of two protons and two neutrons."
+  },
+  {
+    "term": "Amorphous Solid",
+    "tamil": "படிகமற்ற திண்மம் (Padigamattra Thinmam)",
+    "category": "Chemistry",
+    "definition": "A solid that lacks an ordered internal molecular structure, such as glass or plastic."
+  },
+  {
+    "term": "Antibiotic",
+    "tamil": "நுண்ணுயிர் எதிர்ப்பி (Nunnuyir Edhippi)",
+    "category": "Biology",
+    "definition": "A medicine that inhibits the growth of or destroys microorganisms like bacteria."
+  },
+  {
+    "term": "Asthenosphere",
+    "tamil": "அஸ்தனோஸ்பியர் / உருகிய பாறை அடுக்கு (Asthenosphere)",
+    "category": "Earth Science",
+    "definition": "The upper layer of the earth's mantle, below the lithosphere, where rock is relatively soft and flowable."
+  },
+  {
+    "term": "Autotroph",
+    "tamil": "தன் ஊட்ட உயிரி (Than Uoota Uyiri)",
+    "category": "Biology",
+    "definition": "An organism that can make its own food using light, water, or carbon dioxide."
+  },
+  {
+    "term": "Beta Particle",
+    "tamil": "பீட்டா துகள் (Beta Thugal)",
+    "category": "Physics",
+    "definition": "A high-speed, high-energy electron or positron emitted by radioactive decay."
+  },
+  {
+    "term": "Biodegradation",
+    "tamil": "உயிரியல் சிதைவு (Uyiriyal Sidhaivu)",
+    "category": "Environmental Science",
+    "definition": "The decomposition of organic matter by microorganisms or other living things."
+  },
+  {
+    "term": "Calorie",
+    "tamil": "கலோரி (Calorie)",
+    "category": "Physics",
+    "definition": "A unit of energy defined as the amount of heat needed to raise the temperature of one gram of water by one degree Celsius."
+  },
+  {
+    "term": "Carcinogen",
+    "tamil": "புற்றுநோயை உருவாக்கும் காரணி (Puttrunoyai Uruvaakkum Kaarani)",
+    "category": "Biology",
+    "definition": "A substance capable of causing cancer in living tissue."
+  },
+  {
+    "term": "Centrifugal Force",
+    "tamil": "மையவிலக்கு விசை (Maiyavilakku Visai)",
+    "category": "Physics",
+    "definition": "An apparent force that acts outward on a body moving around a center, arising from the body's inertia."
+  },
+  {
+    "term": "Chemcial Equilibrium",
+    "tamil": "வேதிச் சமநிலை (Vethi Samanilai)",
+    "category": "Chemistry",
+    "definition": "The state in which both reactants and products reach concentrations that have no further tendency to change over time."
+  },
+  {
+    "term": "Chlorofluorocarbon",
+    "tamil": "குளோரோபுளோரோகார்பன் (CFC)",
+    "category": "Environmental Science",
+    "definition": "An organic compound containing carbon, chlorine, fluorine, and hydrogen, harmful to the ozone layer."
+  },
+  {
+    "term": "Continental Drift",
+    "tamil": "கண்டப் பெயர்ச்சி (Kandappeyarchi)",
+    "category": "Earth Science",
+    "definition": "The gradual movement of the continents across the earth's surface through geological time."
+  },
+  {
+    "term": "Covalent Compound",
+    "tamil": "சகப்பிணைப்புச் சேர்மம் (Sahapinaippu Serman)",
+    "category": "Chemistry",
+    "definition": "A chemical compound formed by the sharing of electrons between atoms."
+  },
+  {
+    "term": "Cytokinesis",
+    "tamil": "சைட்டோகினேசிஸ் / செல் திரவப் பகுப்பு (Cytokinesis)",
+    "category": "Biology",
+    "definition": "The cytoplasmic division of a cell at the end of mitosis or meiosis, bringing about the separation into two daughter cells."
+  },
+  {
+    "term": "Deoxyribonucleic Acid",
+    "tamil": "டீஆக்சிரைபோநியூக்ளிக் அமிலம் (DNA)",
+    "category": "Biology",
+    "definition": "Self-replicating material present in nearly all living organisms as the main constituent of chromosomes."
+  },
+  {
+    "term": "Dispersion",
+    "tamil": "ஒளிச்சிதறல் / நிறப்பிரிகை (Nirappirigai)",
+    "category": "Physics",
+    "definition": "The splitting of white light into its component colors when passing through a prism."
+  },
+  {
+    "term": "Ecological Succession",
+    "tamil": "சூழலியல் வழிமுறை மாற்றம் (Soozhnilai Valimurai Maatram)",
+    "category": "Environmental Science",
+    "definition": "The process by which the structure of a biological community evolves over time."
+  },
+  {
+    "term": "Electromagnetic Spectrum",
+    "tamil": "மின்னணு காந்த அலைவரிசை (Minanu Kaandha Alaivarisai)",
+    "category": "Physics",
+    "definition": "The range of all types of electromagnetic radiation, from radio waves to gamma rays."
+  },
+  {
+    "term": "Endemic Species",
+    "tamil": "பூர்வீகச் சிற்றினம் (Poorveega Sittrinam)",
+    "category": "Environmental Science",
+    "definition": "Species native to and restricted to a particular geographical region."
+  },
+  {
+    "term": "Enthalpy",
+    "tamil": "எந்தால்பி / வெப்ப உள்ளடக்கம் (Veppam Ulladakkam)",
+    "category": "Chemistry",
+    "definition": "A thermodynamic quantity equivalent to the total heat content of a system."
+  },
+  {
+    "term": "Entropy",
+    "tamil": "என்ட்ரோபி / ஒழுங்கின்மை அளவு (Ozhunginmai Alavu)",
+    "category": "Physics",
+    "definition": "A thermodynamic measure of disorder or randomness in a system."
+  },
+  {
+    "term": "Enzyme Substrate Complex",
+    "tamil": "நொதி-பொருள் கூட்டமைப்பு (Nodhi Porul Kootamappu)",
+    "category": "Biology",
+    "definition": "A temporary molecule formed when an enzyme comes into perfect contact with its substrate."
+  },
+  {
+    "term": "Eukaryote",
+    "tamil": "உட்கரு உள்ள உயிரி (Utkaru Ulla Uyiri)",
+    "category": "Biology",
+    "definition": "An organism consisting of a cell or cells in which the genetic material is DNA in the form of chromosomes contained within a distinct nucleus."
+  },
+  {
+    "term": "Gamma Ray",
+    "tamil": "காம்மா கதிர் (Gamma Kathir)",
+    "category": "Physics",
+    "definition": "Penetrating electromagnetic radiation of a very short wavelength arising from radioactive decay."
+  },
+  {
+    "term": "Gene Pool",
+    "tamil": "மரபணுத் தொகுப்பு (Marabanu Thoguppu)",
+    "category": "Biology",
+    "definition": "The stock of different genes in an interbreeding population."
+  },
+  {
+    "term": "Geothermal Energy",
+    "tamil": "புவிவெப்ப ஆற்றல் (Puvi Veppam Aatral)",
+    "category": "Environmental Science",
+    "definition": "Thermal energy generated and stored in the Earth."
+  },
+  {
+    "term": "Glycolysis",
+    "tamil": "குளுக்கோஸ் சிதைவு (Glucose Sidhaivu)",
+    "category": "Biology",
+    "definition": "The breakdown of glucose by enzymes, releasing energy and pyruvic acid."
+  },
+  {
+    "term": "Greenhouse Effect",
+    "tamil": "பசுமைக்குடில் விளைவு (Pasumai Kudil Vilaivu)",
+    "category": "Environmental Science",
+    "definition": "The trapping of the sun's warmth in a planet's lower atmosphere due to the greater transparency of the atmosphere to visible radiation from the sun."
+  },
+  {
+    "term": "Half-Cell",
+    "tamil": "அரை மின்கலம் (Arai Minkalan)",
+    "category": "Chemistry",
+    "definition": "A structure consisting of an electrode immersed in an electrolyte solution."
+  },
+  {
+    "term": "Heterozygous",
+    "tamil": "வேறுபட்ட மரபணு இணை (Verupatta Marabanu Inai)",
+    "category": "Biology",
+    "definition": "Having inherited different forms of a particular gene from each parent."
+  },
+  {
+    "term": "Homozygous",
+    "tamil": "ஒத்த மரபணு இணை (Otha Marabanu Inai)",
+    "category": "Biology",
+    "definition": "Having inherited the same forms of a particular gene from both parents."
+  },
+  {
+    "term": "Hydrocarbon",
+    "tamil": "ஹைட்ரோகார்பன் (Hydrocarbon)",
+    "category": "Chemistry",
+    "definition": "A compound of hydrogen and carbon, such as any of those that are the chief components of petroleum and natural gas."
+  }
+  {
+    "term": "Ionic Bond",
+    "tamil": "அயனிப் பிணைப்பு (Ayani Pinaippu)",
+    "category": "Chemistry",
+    "definition": "A chemical bond formed through the electrostatic attraction between oppositely charged ions."
+  },
+  {
+    "term": "Kinetic Theory of Gases",
+    "tamil": "வாயுக்களின் இயக்கக் கோட்பாடு (Vaayukalin Iyakka Kotpadu)",
+    "category": "Physics",
+    "definition": "A theory that describes a gas as a large number of submicroscopic particles, all of which are in constant rapid motion."
+  },
+  {
+    "term": "Leaching",
+    "tamil": "கரைத்து எடுத்தல் (Karaithu Eduthal)",
+    "category": "Earth Science",
+    "definition": "The loss of water-soluble plant nutrients from the soil, due to rain and irrigation."
+  },
+  {
+    "term": "Leukocyte",
+    "tamil": "வெண்குருதியணு (Venkuruthiyanu)",
+    "category": "Biology",
+    "definition": "A white blood cell that protects the body against infectious disease and foreign invaders."
+  },
+  {
+    "term": "Light Microscope",
+    "tamil": "ஒளி நுண்ணோக்கி (Oli Nunnookki)",
+    "category": "General Science",
+    "definition": "An instrument that uses visible light and lenses to magnify small objects."
+  },
+  {
+    "term": "Limiting Reactant",
+    "tamil": "வரம்பிற்குட்பட்ட வினைபொருள் (Varambirkutpatta Vinaiporul)",
+    "category": "Chemistry",
+    "definition": "The substance that is totally consumed when the chemical reaction is complete."
+  },
+  {
+    "term": "Lipid",
+    "tamil": "லிப்பிடு / கொழுப்பு மூலக்கூறு (Kozhuppu Moolakooru)",
+    "category": "Biology",
+    "definition": "A group of naturally occurring molecules that include fats, waxes, and fat-soluble vitamins."
+  },
+  {
+    "term": "Littoral Zone",
+    "tamil": "கரை ஓர மண்டலம் (Karai Oram Mandalam)",
+    "category": "Environmental Science",
+    "definition": "The nearshore area where the intertidal and subtidal zones occur."
+  },
+  {
+    "term": "Magnetic Flux",
+    "tamil": "காந்தப் பாயம் (Kaandha Paayam)",
+    "category": "Physics",
+    "definition": "The measure of the quantity of magnetism, taking account of the strength and extent of a magnetic field."
+  },
+  {
+    "term": "Mass Number",
+    "tamil": "நிறை எண் (Nirai En)",
+    "category": "Chemistry",
+    "definition": "The total number of protons and neutrons in an atomic nucleus."
+  },
+  {
+    "term": "Metamorphosis",
+    "tamil": "உருமாற்றம் (Urumaatram)",
+    "category": "Biology",
+    "definition": "The process of transformation from an immature form to an adult form in two or more distinct stages."
+  },
+  {
+    "term": "Microclimate",
+    "tamil": "நுண்காலநிலை (Nun Kalanilai)",
+    "category": "Environmental Science",
+    "definition": "The climate of a very small or restricted area, especially when this differs from the surrounding area."
+  },
+  {
+    "term": "Mitochondrial Matrix",
+    "tamil": "மைட்டோகாண்ட்ரியா உள் திரவம் (Mitochondria Ul Thiravam)",
+    "category": "Biology",
+    "definition": "The space within the inner membrane of the mitochondrion containing enzymes for the Krebs cycle."
+  },
+  {
+    "term": "Mole",
+    "tamil": "மோல் (Mole)",
+    "category": "Chemistry",
+    "definition": "The SI unit of measurement for amount of substance in chemistry."
+  },
+  {
+    "term": "Monomer",
+    "tamil": "ஒற்றைப்படி (Ottaipadai)",
+    "category": "Chemistry",
+    "definition": "A molecule that can be bonded to other identical molecules to form a polymer."
+  },
+  {
+    "term": "Mutation Rate",
+    "tamil": "பிறழ்வு வீதம் (Pirazhvu Veetham)",
+    "category": "Biology",
+    "definition": "The frequency of new mutations in a gene or organism over time."
+  },
+  {
+    "term": "Natural Selection",
+    "tamil": "இயற்கைத் தேர்வு (Iyarkait Therndheduthal)",
+    "category": "Biology",
+    "definition": "The process whereby organisms better adapted to their environment tend to survive and produce more offspring."
+  },
+  {
+    "term": "Niche",
+    "tamil": "வாழிடப் பங்கு (Vaazhidap Pangu)",
+    "category": "Environmental Science",
+    "definition": "The role and position a species has in its environment."
+  },
+  {
+    "term": "Non-renewable Energy",
+    "tamil": "புதுப்பிக்க முடியாத ஆற்றல் (Puthuppikka Mudiya Aatral)",
+    "category": "Environmental Science",
+    "definition": "Energy from sources that exist in finite quantities, such as coal, oil, and natural gas."
+  },
+  {
+    "term": "Nuclear Fusion",
+    "tamil": "அணுக்கரு இணைவு (Anukkaru Inaivu)",
+    "category": "Physics",
+    "definition": "A reaction in which two or more atomic nuclei are combined to form one or more different atomic nuclei and subatomic particles."
+  },
+  {
+    "term": "Nucleotide",
+    "tamil": "நியூக்ளியோடைடு (Nucleotide)",
+    "category": "Biology",
+    "definition": "The basic structural building block of nucleic acids like DNA and RNA."
+  },
+  {
+    "term": "Omnivore",
+    "tamil": "அனைத்துண்ணி (Anaithunni)",
+    "category": "Biology",
+    "definition": "An animal or person that eats food of both plant and animal origin."
+  },
+  {
+    "term": "Oogenesis",
+    "tamil": "அண்டக உருவாக்கம் (Andaga Uruvaakkam)",
+    "category": "Biology",
+    "definition": "The production or development of an ovum (egg cell)."
+  },
+  {
+    "term": "Ozone Depletion",
+    "tamil": "ஓசோன் சிதைவு (Ozone Sidhaivu)",
+    "category": "Environmental Science",
+    "definition": "The thinning of the ozone layer present in the upper atmosphere."
+  },
+  {
+    "term": "Parasitism",
+    "tamil": "ஒட்டுண்ணி வாழ்க்கை (Ottunni Vaazhkai)",
+    "category": "Biology",
+    "definition": "A symbiotic relationship where one organism benefits at the expense of another host."
+  },
+  {
+    "term": "Pascal's Law",
+    "tamil": "பாஸ்கல் விதி (Pascal Vithi)",
+    "category": "Physics",
+    "definition": "States that a pressure change occurring anywhere in a confined incompressible fluid is transmitted throughout the fluid."
+  },
+  {
+    "term": "Pathogen",
+    "tamil": "நோய்க்கிருமி (Noykkirumi)",
+    "category": "Biology",
+    "definition": "A bacterium, virus, or other microorganism that can cause disease."
+  },
+  {
+    "term": "Peptide Bond",
+    "tamil": "பெப்டைடு பிணைப்பு (Peptide Pinaippu)",
+    "category": "Chemistry",
+    "definition": "A covalent bond formed by joining the carboxyl group of one amino acid to the amino group of another."
+  },
+  {
+    "term": "Phenotype",
+    "tamil": "புறத்தோற்றம் (Purathotram)",
+    "category": "Biology",
+    "definition": "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment."
+  },
+  {
+    "term": "Photoperiodism",
+    "tamil": "ஒளிக்கால உணர்வு (Olikkaala Unarvu)",
+    "category": "Biology",
+    "definition": "The physiological response of organisms to the length of night or a dark period."
+  },
+  {
+    "term": "Photosphere",
+    "tamil": "ஒளிக்கோளம் (Oli Kolam)",
+    "category": "Astronomy",
+    "definition": "The luminous visible surface of a star, especially the sun."
+  },
+  {
+    "term": "Phytoplankton",
+    "tamil": "தாவர மிதவை உயிரி (Thaavara Mithavai Uyiri)",
+    "category": "Environmental Science",
+    "definition": "Autotrophic components of the plankton community near the surface of oceans and freshwater bodies."
+  },
+  {
+    "term": "Pioneer Species",
+    "tamil": "முன்னோடிச் சிற்றினம் (Munnaodi Sittrinam)",
+    "category": "Environmental Science",
+    "definition": "Hardy species which are the first to colonize previously disrupted or damaged ecosystems."
+  },
+  {
+    "term": "Planck's Constant",
+    "tamil": "பிளாங்கின் மாறிலி (Planck's Maakili)",
+    "category": "Physics",
+    "definition": "A physical constant that is the quantum of action in quantum mechanics."
+  },
+  {
+    "term": "Polymerization",
+    "tamil": "பல்லுறுப்பாக்கல் (Palluruppakkal)",
+    "category": "Chemistry",
+    "definition": "A process of reacting monomer molecules together in a chemical reaction to form polymer chains."
+  }
+  {
+    "term": "Refractor Telescope",
+    "tamil": "ஒளிவிலகல் தொலைநோக்கி (Oli Vilagal Tholainokki)",
+    "category": "Astronomy",
+    "definition": "An optical telescope that uses a lens as its objective to form an image."
+  },
+  {
+    "term": "Reflection Nebula",
+    "tamil": "எதிரொளிப்பு நிபுலா (Edhirolippu Nebula)",
+    "category": "Astronomy",
+    "definition": "A cloud of interstellar dust that reflects the light of a nearby bright star."
+  },
+  {
+    "term": "Radioactive Decay",
+    "tamil": "கதிரியக்கச் சிதைவு (Kadhiriyakka Sidhaivu)",
+    "category": "Physics",
+    "definition": "The spontaneous breakdown of an atomic nucleus resulting in the release of energy and matter."
+  },
+  {
+    "term": "Recombinant DNA",
+    "tamil": "மறுசேர்க்கை DNA (Maruserkkai DNA)",
+    "category": "Biology",
+    "definition": "DNA molecules formed by laboratory methods of genetic recombination to bring together genetic material from multiple sources."
+  },
+  {
+    "term": "Red Giant",
+    "tamil": "சிவப்புப் பெருமீன் (Sivappu Perumeen)",
+    "category": "Astronomy",
+    "definition": "A dying star in the last stages of stellar evolution with a large volume and luminous surface."
+  },
+  {
+    "term": "Rest Mass",
+    "tamil": "ஓய்வு நிலை நிறை (Oivu Nilai Nirai)",
+    "category": "Physics",
+    "definition": "The mass of a body when it is at rest relative to an observer."
+  },
+  {
+    "term": "Resting Potential",
+    "tamil": "ஓய்வு நிலை மின்னழுத்தம் (Oivu Nilai Minnazhutham)",
+    "category": "Biology",
+    "definition": "The electrical potential of a neuron relative to its surroundings when not actively transmitting impulses."
+  },
+  {
+    "term": "Retrograde Motion",
+    "tamil": "பின்னோக்குச் சுழற்சி (Pinnokku Sutcharchi)",
+    "category": "Astronomy",
+    "definition": "Apparent orbital motion of a planet in a direction opposite to that of other bodies within its system."
+  },
+  {
+    "term": "Rhizome",
+    "tamil": "நிலத்தடித் தண்டு (Nilathadi Thandu)",
+    "category": "Biology",
+    "definition": "A continuously growing horizontal underground stem which puts out lateral shoots and roots."
+  },
+  {
+    "term": "Ribosomal RNA",
+    "tamil": "ரைபோசோமல் RNA (Ribosomal RNA)",
+    "category": "Biology",
+    "definition": "RNA component of the ribosome, essential for protein synthesis in all living cells."
+  },
+  {
+    "term": "RNA Polymerase",
+    "tamil": "RNA பாலிமரேசு (RNA Polymerase)",
+    "category": "Biology",
+    "definition": "An enzyme that is responsible for copying a DNA sequence into an RNA sequence during transcription."
+  },
+  {
+    "term": "Root Pressure",
+    "tamil": "வேர் அழுத்தம் (Ver Azhutham)",
+    "category": "Biology",
+    "definition": "Transverse osmotic pressure within the cells of a root system that causes sap to rise through a plant stem."
+  },
+  {
+    "term": "Salinity",
+    "tamil": "உப்புத்தன்மை (Uppu Thanmai)",
+    "category": "Earth Science",
+    "definition": "The concentration of dissolved salts in water or soil."
+  },
+  {
+    "term": "Saprophyte",
+    "tamil": "சாறுண்ணி (Saarunni)",
+    "category": "Biology",
+    "definition": "An organism that feeds on non-living organic matter, especially dead plant or animal material."
+  },
+  {
+    "term": "Saturated Solution",
+    "tamil": "நிறைவுற்ற கரைசல் (Niraivutra Karisal)",
+    "category": "Chemistry",
+    "definition": "A chemical solution containing the maximum concentration of a solute dissolved in the solvent."
+  },
+  {
+    "term": "Scalar Quantity",
+    "tamil": "திசையிலி அளவு (Thisayili Alavu)",
+    "category": "Physics",
+    "definition": "A physical quantity that has magnitude only and no specific direction."
+  },
+  {
+    "term": "Scanning Electron Microscope",
+    "tamil": "வருடும் மின்னணு நுண்ணோக்கி (Varudum Minnanu Nunnookki)",
+    "category": "General Science",
+    "definition": "An electron microscope that produces images of a sample by scanning the surface with a focused beam of electrons."
+  },
+  {
+    "term": "Schist",
+    "tamil": "சிஸ்ட் பாறை (Schist Parai)",
+    "category": "Earth Science",
+    "definition": "A medium-grade metamorphic rock with well-developed mineral flakes."
+  },
+  {
+    "term": "Schwann Cell",
+    "tamil": "சுவான் செல் (Schwann Cell)",
+    "category": "Biology",
+    "definition": "Any of the cells in the peripheral nervous system that produce the myelin sheath around neuronal axons."
+  },
+  {
+    "term": "Scintillation Counter",
+    "tamil": "ஒளிரும் எண்ணி (Olirum Enni)",
+    "category": "Physics",
+    "definition": "An instrument that measures ionizing radiation by counting light pulses produced by fluorescent material."
+  },
+  {
+    "term": "Secondary Consumer",
+    "tamil": "இரண்டாம் நிலை நுகர்பொருள் (Irandaam Nilai Nukarporul)",
+    "category": "Environmental Science",
+    "definition": "An organism that eats primary consumers for energy, typically carnivores or omnivores."
+  },
+  {
+    "term": "Sedimentation",
+    "tamil": "படிவாக்கல் (Padivaakkal)",
+    "category": "Earth Science",
+    "definition": "The tendency for particles in suspension to settle out of the fluid in which they are lodged."
+  },
+  {
+    "term": "Seismic Wave",
+    "tamil": "நில அதிர்வு அலை (Nila Adhirvu Alai)",
+    "category": "Earth Science",
+    "definition": "An elastic wave generated by an earthquake or explosion traveling through Earth's layers."
+  },
+  {
+    "term": "Semiconductor",
+    "tamil": "குறைக்கடத்தி (Kuraikkadathi)",
+    "category": "Physics",
+    "definition": "A solid substance that has a conductivity intermediate between that of an insulator and an electrical conductor."
+  },
+  {
+    "term": "Sensible Heat",
+    "tamil": "உணரக்கூடிய வெப்பம் (Unarakkudiya Veppam)",
+    "category": "Physics",
+    "definition": "Heat exchanged by a body or thermodynamic system that changes temperature without phase changes."
+  },
+  {
+    "term": "Sex Chromosome",
+    "tamil": "பாலினக் குரோமோசோம் (Paalina Chromosome)",
+    "category": "Biology",
+    "definition": "A chromosome involved with determining the sex of an organism."
+  },
+  {
+    "term": "Shock Wave",
+    "tamil": "அதிர்வலை (Adhirvalai)",
+    "category": "Physics",
+    "definition": "A type of propagating disturbance that moves faster than the local speed of sound in the medium."
+  },
+  {
+    "term": "Sickle Cell Anemia",
+    "tamil": "அரிவாள் செல் இரத்த சோகை (Arival Cell Iratha Sogai)",
+    "category": "Biology",
+    "definition": "A hereditary blood disorder characterized by red blood cells that assume an abnormal rigid sickle shape."
+  },
+  {
+    "term": "Silicon Chip",
+    "tamil": "சிலிக்கான் சில்லு (Silicon Chillu)",
+    "category": "Physics",
+    "definition": "A miniature electronic circuit etched onto a tiny piece of silicon."
+  },
+  {
+    "term": "Single Displacement Reaction",
+    "tamil": "ஒற்றைப் இடப்பெயர்ச்சி வினை (Otrrai Idappeyarchi Vinai)",
+    "category": "Chemistry",
+    "definition": "A chemical reaction where one element replaces another element in a compound."
+  },
+  {
+    "term": "Sintering",
+    "tamil": "கனிப்பிணைப்பு / துகள் பிணைப்பு (Thugal Pinaippu)",
+    "category": "Chemistry",
+    "definition": "Making a powdery material solidify into a solid mass by heating without melting it to liquefaction."
+  },
+  {
+    "term": "Skeletal Muscle",
+    "tamil": "எலும்பு தசை (Elumbu Thasai)",
+    "category": "Biology",
+    "definition": "A voluntary muscle that is connected to the skeleton to form part of the mechanical system."
+  },
+  {
+    "term": "Slip Stream",
+    "tamil": "வளிமண்டல ஓட்டம் (Valimandala Oottam)",
+    "category": "Physics",
+    "definition": "The stream of fluid-like air driven backward by a propeller or jet engine."
+  },
+  {
+    "term": "Smog",
+    "tamil": "புகைமூட்டம் (Pugaimoottam)",
+    "category": "Environmental Science",
+    "definition": "Fog or haze combined with smoke and other atmospheric pollutants."
+  }
 ]
